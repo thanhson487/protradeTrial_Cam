@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous">
+</head>
+
+<body>
+    <header class="titleHeader">
+        <div class="titleHeader__left">
+            <img src="https://protrade-trial.vndirect.com.vn/static/media/pt_trial.a0934fd1.svg" alt="" class="imgLogo">
+            <div class="dayTime">
+                <p class="dayTime__time">04:08:43</p>
+                <p class="dayTime__date">2021/04/07</p>
+                <a class="nav" href="#">Trang chủ</a>
+                <a class="nav" href="#">Tài sản</a>
+                <a class="nav" href="#">Hướng dẫn</a>
+                <p class="nav" href="#">Lãi/Lỗ: 0</p>
+            </div>
+            <div class="titleHeader__middle--color"><i class="fa fa-trophy iconTop"></i><span>Top cao thủ phái
+                    sinh</span>
+            </div>
+        </div>
+
+
+
+        <div class="titleHeader__right">
+            <p class="version">Bản Trial</p>
+            <a class="upgrade__user">Nâng cấp tài khoản</a>
+            <div class="user">
+                <i class="fa fa-user icon-user"></i>
+                <p class="user__name">Phạm Thanh Sơn</p>
+                <i class="fa fa-caret-down down"></i>
+                <div class="user__logout">
+                    <i class="fa fa-sign-out"></i>
+                    <p>Logout</p>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="main__left">
+
+            <div class="tradingview-widget-container tradingview">
+                <div id="tradingview_2343b"></div>
+
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                    new TradingView.widget(
+                        {
+                            "width": '100%',
+                            "height": '100%',
+                            "symbol": "NASDAQ:AAPL",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "0",
+                            "locale": "vi_VN",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "hide_side_toolbar": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_2343b"
+                        }
+                    );
+                </script>
+            </div>
+
+            <div class="historydeal">
+                <ul>
+                    <li>
+                        <p>VN30F2104</p>
+                    </li>
+                    <li>
+                        <span>Sàn: </span>
+                        <br>
+                        <span class="san">1090.9</span>
+                    </li>
+                    <li>
+                        <span>TC: </span>
+                        <br>
+                        <span class="tc">1090.9</span>
+                    </li>
+                    <li>
+                        <span>Trần: </span>
+                        <br>
+                        <span class="tran">1090.9</span>
+                    </li>
+                </ul>
+                <div class="historydeal__title-row">
+                    <a class="price">Bước giá</a>
+                    <a class="historyData">Lịch sử khớp lệnh</a>
+                </div>
+                <div class="historydeal__row">
+                    <div class="historydeal__row--buy">
+                        <div>
+                            <p>KL Mua</p>
+                        </div>
+                        <div>
+                            Gia Mua
+                        </div>
+                    </div>
+                    <div class="historydeal__row--sell">
+                        <div>
+                            Giá Bán
+                        </div>
+                        <div>
+                            KL Bán
+                        </div>
+                    </div>
+                </div>
+                <div class="historydeal__row--data">
+                    <div class="historydeal__row--data--buy--data">
+                        <div class="buy-kl">
+                            <p>15</p>
+                            <p>4356.23</p>
+
+                        </div>
+                        <div class="buy-kl">
+                            <p>15</p>
+                            <p>4356.23</p>
+
+                        </div>
+                        <div class="buy-kl">
+                            <p>15</p>
+                            <p>4356.23</p>
+
+                        </div>
+                        <div class="buy-kl">
+                            <p>15</p>
+                            <p>4356.23</p>
+
+                        </div>
+                        <div class="buy-kl">
+                            <p>15</p>
+                            <p>4356.23</p>
+
+                        </div>
+
+                    </div>
+                    <div class="historydeal__row--data--sell--data">
+                        <div class="sell-price">
+                            <p>5685.42</p>
+                            <p>16</p>
+                        </div>
+                        <div class="sell-price">
+                            <p>2452.42</p>
+                            <p>16</p>
+                        </div>
+                        <div class="sell-price">
+                            <p>5685.42</p>
+                            <p>16</p>
+                        </div>
+                        <div class="sell-price">
+                            <p>5685.42</p>
+                            <p>16</p>
+                        </div>
+                        <div class="sell-price">
+                            <p>5685.42</p>
+                            <p>16</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+
+
+            <div class="testaaa">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                            {
+                                "width": "100%",
+                                    "height": "100%",
+                                        "defaultColumn": "overview",
+                                            "screener_type": "crypto_mkt",
+                                                "displayCurrency": "USD",
+                                                    "colorTheme": "dark",
+                                                        "locale": "vi_VN"
+                            }
+                        </script>
+                </div>
+                <!-- TradingView Widget END -->
+                <div class="version">
+                    <p class='version--vnd'>
+                        Bản quyền thuộc về VNDIRECT © 2021. v2.2.2
+                    </p>
+                    <div class="chart-icon">
+                        <p>VN30 INTRADAY</p>
+                        <p>VN30</p>
+                        <i class="fas fa-chart-bar"></i>
+                        <i class="fa fa-chart-pie"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!--  -->
+            <div class="listDataDeal">
+                <div class="listDataDeal__title">
+                    <p>Mã</p>
+                    <p>Giá</p>
+                    <p>+/-</p>
+                    <p>Lệnh</p>
+                    <p>Tổng KL</p>
+                </div>
+
+                <div class="listDataDeal__data">
+                    <p>VN30F2104</p>
+                    <p>1,183</p>
+                    <p>10.0</p>
+                    <p>2.93</p>
+                    <p class="colorffff">166,644</p>
+                </div>
+                <div class="listDataDeal__data listDataDeal__data--gray">
+                    <p>VN30F2435</p>
+                    <p>1,183</p>
+                    <p>10.0</p>
+                    <p>2.93</p>
+                    <p class="colorffff">166,644</p>
+                </div>
+                <div class="listDataDeal__data">
+                    <p>VN30F2554</p>
+                    <p>1,183</p>
+                    <p>10.0</p>
+                    <p>2.93</p>
+                    <p class="colorffff">166,644</p>
+                </div>
+                <div class="listDataDeal__data listDataDeal__data--gray">
+                    <p>VN30F2104</p>
+                    <p>1,183</p>
+                    <p>10.0</p>
+                    <p>2.93</p>
+                    <p class="colorffff">166,644</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="main__right">
+            <div class="data1">
+
+                <div id="datachangetaisan">
+                    <div class="title-header">
+                        <p>Thông tin tài sản</p>
+                        <div class="list-icons">
+                            <i class="fa fa-sync" style="margin-right: 10px; cursor: pointer;"></i>
+                            <i class="fa fa-external-link" style="margin-right: 10px; cursor: pointer;"></i>
+                            <i class="fa fa-minus close"></i>
+                        </div>
+                    </div>
+                    <div class="title-group">
+                        <p>Tài sản ròng</p>
+                        <p>40,000,000</p>
+                    </div>
+                    <div class="title-group">
+                        <p>Số dư ký quỹ</p>
+                        <p>40,000,000</p>
+                    </div>
+                    <div class="title-group">
+                        <p>24,000,000</p>
+                        <p>24,000,000</p>
+                    </div>
+                </div>
+                <div class="datachangesolenh">
+                    <div class="title-header">
+                        <p>Lệnh trong ngày</p>
+                        <p>Lệnh điều kiện</p>
+                        <p>
+                            <i class="fa fa-sync" style="margin-right: 10px; cursor: pointer;"></i>
+                            <i class="fa fa-minus close" style="cursor: pointer;"></i>
+                        </p>
+                    </div>
+                    <div class="title-table">
+                        <p>Lệnh</p>
+                        <p>Mã</p>
+                        <p>KL Khớp</p>
+                        <p>Giá</p>
+                        <p>TT</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="data2">
+                <div class="select-check">
+                    <ul>
+                        <li>
+                            <input type="radio" name="test">
+                            <span>Lệnh thường</span>
+                        </li>
+                        <li>
+                            <input type="radio" name="test">
+                            <span>Lệnh Stop</span>
+                        </li>
+                        <li>
+                            <input type="radio" name="test">
+                            <span>Lệnh trailing</span>
+                        </li>
+                        <li>
+                            <input type="radio" name="test">
+                            <span>Lệnh OSO</span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="form">
+                    <div class="form-group">
+                        <label for="" class="label-title">Mã HĐTL</label>
+                        <select name="cars" id="cars" class="input-value">
+                            <option value="volvo">VND49F2016</option>
+                            <option value="volvo">VND49F2016</option>
+                            <option value="volvo">VND49F2016</option>
+                            <option value="volvo">VND49F2016</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-title">Giá đặt</label>
+                        <input type="number" placeholder="Giá" class="input-value">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-title">Khối lượng</label>
+                        <input type="number" placeholder="KL" class="input-value">
+                    </div>
+                    <div class="form-group form-group--flexend">
+                        <button class="button button--green">Mua</button>
+                        <button class="button button--red">Bán</button>
+                        <div>
+                            <input type="checkbox">
+                            <label for="">lưu lệnh</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li id="solenh" style="cursor: pointer">Sổ lệnh</li>
+                        <li id="danhmuc" style="cursor: pointer"> Danh mục</li>
+                        <li id="taisan" style="cursor: pointer">
+                            Tài Sản
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./control.js"></script>
+
+</html>
