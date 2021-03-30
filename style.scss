@@ -12,11 +12,14 @@ a {
   text-decoration: none;
 }
 .titleHeader {
-  background: rgb(19, 23, 34);
   display: flex;
   flex-direction: row;
+
   width: 100%;
   height: 38px;
+
+  background: rgb(19, 23, 34);
+
   &__left {
     display: flex;
     align-items: center;
@@ -29,58 +32,74 @@ a {
     .dayTime {
       display: flex;
       &__time {
-        margin-left: 10px;
-        color: #f7941d;
         display: inline-block;
+
         font-family: Helvetica, Arial, sans-serif;
         font-size: 12.8px;
         font-weight: 700;
         line-height: 21px;
-
         quotes: auto;
         vertical-align: middle;
+
+        margin-left: 10px;
+        color: #f7941d;
       }
       &__date {
         margin-left: 5px;
         margin-right: 5px;
+
         color: #f7941d;
+
         display: inline-block;
+
         font-size: 12.8px;
         line-height: 21px;
-        margin-right: 5px;
       }
       .nav {
-        padding-left: 5px;
         position: relative;
+
         display: inline-block;
+
+        padding-left: 5px;
         margin-left: 15px;
+
         color: #eee;
+
         cursor: pointer;
+
         font-size: 12.8px;
         font-weight: 700;
         line-height: 25px;
         list-style: none;
         text-decoration: none;
+
         &::before {
           content: "";
+
           position: absolute;
-          height: 23px;
-          border-left: 1px solid #da1717;
           top: 50%;
           left: -7px;
+
+          height: 23px;
+
+          border-left: 1px solid #da1717;
+
           transform: translateY(-50%);
         }
       }
     }
 
     .titleHeader__middle--color {
-      background-color: #97027f;
       display: flex;
       align-items: center;
-      border-radius: 5px;
+
       margin-left: 30px;
       padding: 2px 20px;
+      border-radius: 5px;
+
+      background-color: #97027f;
       color: rgb(219, 218, 218);
+
       font-size: 0.85rem;
     }
     .iconTop {
@@ -93,25 +112,34 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     color: rgb(255, 255, 255);
+
     .version {
       text-transform: uppercase;
+
       padding: 5px;
       margin-right: 15px;
+
       border: 1px solid #f7941d;
       border-radius: 5px;
       box-sizing: border-box;
+
       font-size: 0.8rem;
       font-weight: 600;
       line-height: 16px;
     }
     .upgrade__user {
       font-size: 0.9rem;
+
       border-radius: 5px;
+
       display: flex;
-      padding: 2px 20px;
-      background-color: rgb(245, 147, 30);
+
       margin-right: 15px;
+      padding: 2px 20px;
+
+      background-color: rgb(245, 147, 30);
     }
     .user {
       display: flex;
@@ -121,11 +149,13 @@ a {
 
       .icon-user {
         color: white;
+
         margin-right: 5px;
       }
       .user__name {
-        font-size: 13.44px;
         quotes: auto;
+
+        font-size: 13.44px;
         text-align: right;
         text-decoration: none;
       }
@@ -137,13 +167,17 @@ a {
         display: none;
         justify-content: flex-end;
         align-items: center;
-        padding-right: 20px;
-        position: absolute;
-        background: rgb(19, 23, 34);
-        z-index: 100;
-        top: 100%;
+
         width: 100%;
         height: 40px;
+        padding-right: 20px;
+
+        position: absolute;
+
+        z-index: 100;
+        top: 100%;
+
+        background: rgb(19, 23, 34);
 
         &:hover {
           color: rgb(245, 147, 30);
@@ -161,7 +195,9 @@ a {
 .main {
   display: grid;
   grid-template-columns: 70% 30%;
+
   background: rgb(19, 23, 34);
+
   height: calc(100vh - 38px);
 
   &__left {
@@ -172,23 +208,29 @@ a {
 
     .historydeal {
       background: #2f3240;
+
       overflow-y: auto;
       overflow-x: hidden;
+
       height: 100%;
+
       position: relative;
       &::-webkit-scrollbar {
         display: none;
       }
       ul {
         display: flex;
-        list-style: none;
         justify-content: space-around;
         align-items: center;
-        color: #ffff;
+
+        list-style: none;
+
         padding: 5px;
         border-bottom: 1px solid #3a3a3a;
+
         font-size: 0.9rem;
 
+        color: #ffff;
         li {
           line-height: 17px;
           span:nth-child(1) {
@@ -208,10 +250,13 @@ a {
       &__title-row {
         display: flex;
         justify-content: space-around;
+
         font-size: 0.9rem;
         .price {
           color: #f7941d;
+
           text-decoration: none;
+
           padding: 5px 0;
         }
         .historyData {
@@ -224,22 +269,30 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
         background-color: #3a3d48;
-        padding: 8px;
         color: #eee;
+
+        padding: 8px;
+
         &--buy {
           display: flex;
           justify-content: space-around;
+
           font-size: 0.75rem;
           text-align: center;
+
           width: 100%;
+
           border-right: 1px solid rgb(63, 61, 61);
         }
         &--sell {
           display: flex;
           justify-content: space-around;
+
           font-size: 0.75rem;
           text-align: center;
+
           width: 100%;
         }
       }
@@ -247,39 +300,55 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 100%;
         top: 100px;
+
+        height: 100%;
+
         overflow: auto;
 
         &--buy--data {
           font-size: 13px;
           text-align: center;
+
           width: 100%;
+
           border-right: 1px solid rgb(68, 66, 66);
           border-bottom: 1px solid #444444;
+
           .buy-kl {
             display: flex;
             align-items: center;
             justify-content: center;
+
             width: 100%;
+
             p {
               flex: 1;
+
               width: 100%;
+
               padding: 5px;
+
               text-align: center;
+
               color: #eee;
+
               position: relative;
               &:last-child::after {
                 content: "";
+
                 position: absolute;
                 right: 0;
                 top: 0;
                 bottom: 0;
+
                 width: 50%;
+
                 background-color: #aeb1bd;
                 opacity: 0.3;
               }
@@ -292,30 +361,42 @@ a {
         &--sell--data {
           font-size: 13px;
           text-align: center;
+
           width: 100%;
           .sell-price {
             width: 100%;
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             p {
               flex: 1;
+
               width: 100%;
               padding: 5px;
+
               text-align: center;
+
               color: #eee;
+
               position: relative;
+
               &:first-child {
                 color: #0f0;
               }
               &:first-child::after {
                 content: "";
+
                 position: absolute;
                 left: 0;
                 top: 0;
                 bottom: 0;
+
                 width: 50%;
+
                 background-color: #aeb1bd;
+
                 opacity: 0.3;
               }
             }
@@ -330,16 +411,21 @@ a {
       &__title {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+
         color: #ffff;
-        font-size: 0.9rem;
         background: #3a3d48;
+
+        font-size: 0.9rem;
         text-align: center;
       }
       &__data {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+
         padding: 5px;
+
         color: #0f0;
+
         text-align: center;
         font-size: 0.9rem;
         .colorffff {
