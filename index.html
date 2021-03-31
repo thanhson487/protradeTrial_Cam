@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Cam</title>
+    <link rel="icon" href="./icons8-orange-100.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous">
 </head>
@@ -18,10 +19,10 @@
             <div class="dayTime">
                 <p class="dayTime__time">04:08:43</p>
                 <p class="dayTime__date">2021/04/07</p>
-                <a class="nav" href="#">Trang chủ</a>
+                <a class="nav nav--checked" href="#">Trang chủ</a>
                 <a class="nav" href="#">Tài sản</a>
                 <a class="nav" href="#">Hướng dẫn</a>
-                <p class="nav" href="#">Lãi/Lỗ: 0</p>
+                <p class="nav revenue " href="#">Lãi/Lỗ: 0</p>
             </div>
             <div class="titleHeader__middle--color"><i class="fa fa-trophy iconTop"></i><span>Top cao thủ phái
                     sinh</span>
@@ -87,12 +88,12 @@
                     <li>
                         <span>TC: </span>
                         <br>
-                        <span class="tc">1090.9</span>
+                        <span class="tc">2253.9</span>
                     </li>
                     <li>
                         <span>Trần: </span>
                         <br>
-                        <span class="tran">1090.9</span>
+                        <span class="tran">5623.9</span>
                     </li>
                 </ul>
                 <div class="historydeal__title-row">
@@ -105,7 +106,7 @@
                             <p>KL Mua</p>
                         </div>
                         <div>
-                            Gia Mua
+                            Giá Mua
                         </div>
                     </div>
                     <div class="historydeal__row--sell">
@@ -121,21 +122,21 @@
                     <div class="historydeal__row--data--buy--data">
                         <div class="buy-kl">
                             <p>15</p>
+                            <p>3242.23</p>
+
+                        </div>
+                        <div class="buy-kl">
+                            <p>14</p>
                             <p>4356.23</p>
 
                         </div>
                         <div class="buy-kl">
-                            <p>15</p>
+                            <p>13</p>
                             <p>4356.23</p>
 
                         </div>
                         <div class="buy-kl">
-                            <p>15</p>
-                            <p>4356.23</p>
-
-                        </div>
-                        <div class="buy-kl">
-                            <p>15</p>
+                            <p>86</p>
                             <p>4356.23</p>
 
                         </div>
@@ -211,42 +212,56 @@
 
             <!--  -->
             <div class="listDataDeal">
-                <div class="listDataDeal__title">
-                    <p>Mã</p>
-                    <p>Giá</p>
-                    <p>+/-</p>
-                    <p>Lệnh</p>
-                    <p>Tổng KL</p>
+                <div class="wrap1">
+                    <div class="listDataDeal__title">
+                        <p>Mã</p>
+                        <p>Giá</p>
+                        <p class="flex flex-align-center"><i class="fal fa-caret-left"></i>
+                            +/- <i class="fal fa-caret-right"></i></p>
+                        <p>Lệch</p>
+                        <p>Tổng KL</p>
+                    </div>
+
+                    <div class="listDataDeal__data">
+                        <p>VN30F2104</p>
+                        <p>1,183</p>
+                        <p>10.0</p>
+                        <p>2.93</p>
+                        <p class="colorffff">166,644</p>
+                    </div>
+                    <div class="listDataDeal__data listDataDeal__data--gray">
+                        <p>VN30F2435</p>
+                        <p>1,183</p>
+                        <p>10.0</p>
+                        <p>2.93</p>
+                        <p class="colorffff">166,644</p>
+                    </div>
+                    <div class="listDataDeal__data">
+                        <p>VN30F2554</p>
+                        <p>1,183</p>
+                        <p>10.0</p>
+                        <p>2.93</p>
+                        <p class="colorffff">166,644</p>
+                    </div>
+                    <div class="listDataDeal__data listDataDeal__data--gray">
+                        <p>VN30F2104</p>
+                        <p>1,183</p>
+                        <p>10.0</p>
+                        <p>2.93</p>
+                        <p class="colorffff">166,644</p>
+                    </div>
                 </div>
 
-                <div class="listDataDeal__data">
-                    <p>VN30F2104</p>
-                    <p>1,183</p>
-                    <p>10.0</p>
-                    <p>2.93</p>
-                    <p class="colorffff">166,644</p>
+                <div class="footer footer--scare">
+                    <ul>
+                        <li style="cursor: pointer" class="solenh">Sổ lệnh</li>
+                        <li style="cursor: pointer" class="danhmuc"> Danh mục</li>
+                        <li style="cursor: pointer" class="taisan">
+                            Tài Sản
+                        </li>
+                    </ul>
                 </div>
-                <div class="listDataDeal__data listDataDeal__data--gray">
-                    <p>VN30F2435</p>
-                    <p>1,183</p>
-                    <p>10.0</p>
-                    <p>2.93</p>
-                    <p class="colorffff">166,644</p>
-                </div>
-                <div class="listDataDeal__data">
-                    <p>VN30F2554</p>
-                    <p>1,183</p>
-                    <p>10.0</p>
-                    <p>2.93</p>
-                    <p class="colorffff">166,644</p>
-                </div>
-                <div class="listDataDeal__data listDataDeal__data--gray">
-                    <p>VN30F2104</p>
-                    <p>1,183</p>
-                    <p>10.0</p>
-                    <p>2.93</p>
-                    <p class="colorffff">166,644</p>
-                </div>
+
             </div>
 
         </div>
@@ -259,7 +274,7 @@
                         <div class="list-icons">
                             <i class="fa fa-sync" style="margin-right: 10px; cursor: pointer;"></i>
                             <i class="fa fa-external-link" style="margin-right: 10px; cursor: pointer;"></i>
-                            <i class="fa fa-minus close"></i>
+                            <i class="fa fa-minus close hideTabRight" id=""></i>
                         </div>
                     </div>
                     <div class="title-group">
@@ -271,17 +286,17 @@
                         <p>40,000,000</p>
                     </div>
                     <div class="title-group">
-                        <p>24,000,000</p>
-                        <p>24,000,000</p>
+                        <p>Thuế và phí</p>
+                        <p>0</p>
                     </div>
                 </div>
                 <div class="datachangesolenh">
                     <div class="title-header">
-                        <p>Lệnh trong ngày</p>
-                        <p>Lệnh điều kiện</p>
-                        <p>
+                        <p class="comeinandDay">Lệnh trong ngày</p>
+                        <p class="conditionalOrder">Lệnh điều kiện</p>
+                        <p class="title-header__icon">
                             <i class="fa fa-sync" style="margin-right: 10px; cursor: pointer;"></i>
-                            <i class="fa fa-minus close" style="cursor: pointer;"></i>
+                            <i class="fa fa-minus close hideTabRight" style="cursor: pointer;" id=""></i>
                         </p>
                     </div>
                     <div class="title-table">
@@ -291,7 +306,63 @@
                         <p>Giá</p>
                         <p>TT</p>
                     </div>
+                    <div class="data-show">
+                        <div class="data-show__detail">
+                            <p>Mua</p>
+                            <p>VN30F2104</p>
+                            <p><span>0/</span>21</p>
+                            <p>1,111.0</p>
+                            <p><i class="fa fa-minus-circle"></i></p>
+                        </div>
+                        <div class="data-show__detail">
+                            <p>Mua</p>
+                            <p>VN30F2104</p>
+                            <p><span>0/</span>21</p>
+                            <p>1,111.0</p>
+                            <p><i class="fa fa-minus-circle"></i></p>
+                        </div>
+
+                    </div>
                 </div>
+
+                <!--  -->
+
+                <div class="datachangeMenu">
+                    <div class="title-header">
+                        <p class="comeinandDay">Vị thế mở</p>
+                        <p class="conditionalOrder">Vị thế đóng</p>
+                        <p class="title-header__icon">
+                            <i class="fa fa-sync" style="margin-right: 10px; cursor: pointer;"></i>
+                            <i class="fa fa-minus close hideTabRight" style="cursor: pointer;" id=""></i>
+                        </p>
+                    </div>
+                    <div class="title-table">
+                        <p>Mã</p>
+                        <p>KL</p>
+                        <p>Giá vốn</p>
+                        <p>Giá hiện tại</p>
+                        <p>+/-</p>
+                    </div>
+                    <div class="data-show">
+                        <div class="data-show__detail">
+                            <p>Mua</p>
+                            <p>VN30F2104</p>
+                            <p><span>0/</span>21</p>
+                            <p>1,111.0</p>
+                            <p><i class="fa fa-minus-circle"></i></p>
+                        </div>
+                        <div class="data-show__detail">
+                            <p>Mua</p>
+                            <p>VN30F2104</p>
+                            <p><span>0/</span>21</p>
+                            <p>1,111.0</p>
+                            <p><i class="fa fa-minus-circle"></i></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
             <div class="data2">
@@ -339,7 +410,7 @@
                         <button class="button button--red">Bán</button>
                         <div>
                             <input type="checkbox">
-                            <label for="">lưu lệnh</label>
+                            <label for="" class="saveCommand">lưu lệnh</label>
                         </div>
                     </div>
 
