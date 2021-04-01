@@ -241,11 +241,13 @@ a {
   font-size: 12.8px;
   font-weight: 700;
   padding: 5px 0;
+  cursor: pointer;
 }
 .main__left .historydeal__title-row .historyData {
   color: #ffffff;
   padding: 5px 0;
   font-size: 12.8px;
+  cursor: pointer;
 }
 .main__left .historydeal__row {
   display: flex;
@@ -472,6 +474,10 @@ a {
 .main__right .data1 .datachangeorderBook .title-header .comeinandDay {
   color: #f7941d;
   font-weight: 700;
+  cursor: pointer;
+}
+.main__right .data1 .datachangeorderBook .title-header .conditionalOrder {
+  cursor: pointer;
 }
 .main__right .data1 .datachangeorderBook .title-header__icon {
   color: #f7941d;
@@ -538,6 +544,10 @@ a {
 .main__right .data1 .datachangeMenu .title-header .comeinandDay {
   color: #f7941d;
   font-weight: 700;
+  cursor: pointer;
+}
+.main__right .data1 .datachangeMenu .title-header .conditionalOrder {
+  cursor: pointer;
 }
 .main__right .data1 .datachangeMenu .title-header__icon {
   color: #f7941d;
