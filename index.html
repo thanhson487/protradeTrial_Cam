@@ -17,12 +17,12 @@
         <div class="titleHeader__left">
             <img src="https://protrade-trial.vndirect.com.vn/static/media/pt_trial.a0934fd1.svg" alt="" class="imgLogo">
             <div class="dayTime">
-                <p class="dayTime__time">04:08:43</p>
-                <p class="dayTime__date">2021/04/07</p>
-                <a class="nav nav--checked" href="#">Trang chủ</a>
-                <a class="nav" href="#">Tài sản</a>
-                <a class="nav" href="#">Hướng dẫn</a>
-                <p class="nav revenue " href="#">Lãi/Lỗ: 0</p>
+                <p class="dayTime__time ">04:08:43</p>
+                <p class="dayTime__date ">2021/04/07</p>
+                <a class="nav nav--checked dayTime--width" href="#">Trang chủ</a>
+                <a class="nav dayTime--width" href="#">Tài sản</a>
+                <a class="nav dayTime--width" href="#">Hướng dẫn</a>
+                <p class="nav revenue dayTime--width" href="#">Lãi/Lỗ: 0</p>
             </div>
             <div class="titleHeader__middle--color"><i class="fa fa-trophy iconTop"></i><span>Top cao thủ phái
                     sinh</span>
@@ -198,6 +198,7 @@
                     <p class='version--vnd'>
                         Bản quyền thuộc về VNDIRECT © 2021. v2.2.2
                     </p>
+                    <div class="clone"></div>
                     <div class="chart-icon">
                         <p>VN30 INTRADAY</p>
                         <p>VN30</p>
@@ -252,23 +253,13 @@
                     </div>
                 </div>
 
-                <div class="footer footer--scare">
-                    <ul>
-                        <li style="cursor: pointer" class="solenh">Sổ lệnh</li>
-                        <li style="cursor: pointer" class="danhmuc"> Danh mục</li>
-                        <li style="cursor: pointer" class="taisan">
-                            Tài Sản
-                        </li>
-                    </ul>
-                </div>
-
             </div>
 
         </div>
         <div class="main__right">
             <div class="data1">
 
-                <div id="datachangetaisan">
+                <div id="datachangeasset">
                     <div class="title-header">
                         <p>Thông tin tài sản</p>
                         <div class="list-icons">
@@ -290,7 +281,7 @@
                         <p>0</p>
                     </div>
                 </div>
-                <div class="datachangesolenh">
+                <div class="datachangeorderBook">
                     <div class="title-header">
                         <p class="comeinandDay">Lệnh trong ngày</p>
                         <p class="conditionalOrder">Lệnh điều kiện</p>
@@ -369,20 +360,20 @@
                 <div class="select-check">
                     <ul>
                         <li>
-                            <input type="radio" name="test">
-                            <span>Lệnh thường</span>
+                            <input type="radio" name="test" id="test1">
+                            <label for="test1">Lệnh thường</label>
                         </li>
                         <li>
-                            <input type="radio" name="test">
-                            <span>Lệnh Stop</span>
+                            <input type="radio" name="test" id="test2">
+                            <label for="test2">Lệnh Stop</label>
                         </li>
                         <li>
-                            <input type="radio" name="test">
-                            <span>Lệnh trailing</span>
+                            <input type="radio" name="test" id="test3">
+                            <label for="test3">Lệnh trailing</label>
                         </li>
                         <li>
-                            <input type="radio" name="test">
-                            <span>Lệnh OSO</span>
+                            <input type="radio" name="test" id="test4">
+                            <label for=test4>Lệnh OSO</label>
                         </li>
                     </ul>
 
@@ -415,16 +406,18 @@
                     </div>
 
                 </div>
-                <div class="footer">
-                    <ul>
-                        <li id="solenh" style="cursor: pointer">Sổ lệnh</li>
-                        <li id="danhmuc" style="cursor: pointer"> Danh mục</li>
-                        <li id="taisan" style="cursor: pointer">
-                            Tài Sản
-                        </li>
-                    </ul>
-                </div>
+
+
             </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li id="orderBook" style="cursor: pointer">Sổ lệnh</li>
+                <li id="listfooter" style="cursor: pointer"> Danh mục</li>
+                <li id="asset" style="cursor: pointer">
+                    Tài Sản
+                </li>
+            </ul>
         </div>
 
     </main>

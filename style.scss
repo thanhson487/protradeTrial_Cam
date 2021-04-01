@@ -25,7 +25,9 @@ a {
   &__left {
     display: flex;
     align-items: center;
-    flex: 1 1 auto;
+    flex: 1 1;
+
+    min-width: 900px;
 
     .imgLogo {
       height: 38px;
@@ -33,6 +35,8 @@ a {
     }
     .dayTime {
       display: flex;
+      align-items: center;
+
       &__time {
         display: inline-block;
 
@@ -111,21 +115,30 @@ a {
       color: #fff;
 
       font-size: 12.8px;
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
     }
     .iconTop {
       font-size: 0.75rem;
       margin-right: 5px;
     }
   }
-
+  position: relative;
   &__right {
-    flex: 1 1 auto;
+    flex: 1 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
+    position: absolute;
+    right: 0;
+    top: 5px;
+
     color: rgb(255, 255, 255);
 
+    min-width: 600px;
     .version {
       display: flex;
       align-items: center;
@@ -187,14 +200,16 @@ a {
 
         width: 100%;
         height: 40px;
+
         padding-right: 20px;
 
         position: absolute;
-
         z-index: 100;
         top: 100%;
 
         background: rgb(19, 23, 34);
+
+        cursor: pointer;
 
         &:hover {
           color: rgb(245, 147, 30);
@@ -471,32 +486,6 @@ a {
           background-color: #3a3d48;
         }
       }
-
-      .footer {
-        display: none;
-        height: 10%;
-        background-color: #131722;
-        ul {
-          display: flex;
-          justify-content: space-between;
-
-          list-style: none;
-
-          font-size: 0.8rem;
-
-          color: #fff;
-
-          li {
-            padding: 7px;
-
-            display: inline-block;
-
-            text-align: center;
-
-            width: 100%;
-          }
-        }
-      }
     }
     .testaaa {
       overflow: hidden;
@@ -515,13 +504,28 @@ a {
 
         display: flex;
         align-items: center;
+        justify-content: space-around;
 
         color: #eee;
-        &--vnd {
+        .clone {
           width: 50%;
         }
+        &--vnd {
+          display: flex;
+          align-items: center;
+
+          width: auto;
+          padding: 7px;
+
+          position: fixed;
+          left: 0;
+          bottom: 2;
+          z-index: 20;
+
+          background-color: #131722;
+        }
         .chart-icon {
-          width: 50%;
+          width: 400px;
 
           display: flex;
           justify-content: space-around;
@@ -547,13 +551,13 @@ a {
       background-color: #2f3240;
       color: #fff;
 
-      flex: 1;
+      flex-grow: 1;
 
       font-size: 12.8px;
       line-height: 21.3333px;
 
       margin: 1px;
-      #datachangetaisan {
+      #datachangeasset {
         .title-header {
           display: flex;
           justify-content: space-between;
@@ -581,7 +585,8 @@ a {
         }
       }
 
-      .datachangesolenh {
+      .datachangeorderBook {
+        display: none;
         .title-header {
           display: flex;
           justify-content: space-around;
@@ -656,6 +661,7 @@ a {
         }
       }
       .datachangeMenu {
+        display: none;
         .title-header {
           display: flex;
           justify-content: space-around;
@@ -754,7 +760,7 @@ a {
               margin-right: 3px;
             }
 
-            span {
+            label {
               font-size: 12.8px;
             }
           }
@@ -815,34 +821,49 @@ a {
       .form-group--flexend {
         justify-content: flex-end;
 
-        margin-bottom: 15px;
+        margin-bottom: 50px;
       }
-      .footer {
-        margin-left: -15px;
-        margin-right: -15px;
-        ul {
-          display: flex;
-          justify-content: space-between;
+    }
+  }
+}
+main {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 30;
+    width: 396px;
 
-          list-style: none;
+    ul {
+      display: flex;
+      justify-content: space-between;
 
-          font-size: 0.8rem;
+      list-style: none;
 
-          li {
-            padding: 7px;
+      font-size: 0.8rem;
+      background-color: #131722;
+      li {
+        padding: 7px;
+        color: #fff;
+        display: inline-block;
 
-            display: inline-block;
+        text-align: center;
 
-            text-align: center;
-
-            width: 100%;
-            &:nth-of-type(3) {
-              background-color: #2f3240;
-              color: #ed8f21;
-            }
-          }
+        width: 100%;
+        &:nth-of-type(3) {
+          background-color: #2f3240;
+          color: #ed8f21;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main__right {
+    display: none;
+  }
+  .main {
+    grid-template-columns: 1fr;
   }
 }
