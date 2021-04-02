@@ -706,6 +706,9 @@ a {
             color: #f7941d;
           }
         }
+        .closeTaste {
+          display: none;
+        }
         .title-table {
           display: flex;
 
@@ -887,6 +890,10 @@ main {
       }
     }
   }
+}
+.hideTabRight {
+  padding: 5px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {

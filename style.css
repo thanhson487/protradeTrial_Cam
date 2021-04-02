@@ -565,6 +565,9 @@ a {
 .main__right .data1 .datachangeMenu .title-header__icon {
   color: #f7941d;
 }
+.main__right .data1 .datachangeMenu .closeTaste {
+  display: none;
+}
 .main__right .data1 .datachangeMenu .title-table {
   display: flex;
   width: 100%;
@@ -712,6 +715,11 @@ main .footer ul li {
 main .footer ul li:nth-of-type(3) {
   background-color: #2f3240;
   color: #ed8f21;
+}
+
+.hideTabRight {
+  padding: 5px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {

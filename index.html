@@ -198,10 +198,10 @@
                     </p>
                     <div class="clone"></div>
                     <div class="chart-icon">
-                        <p style="cursor: pointer;">VN30 INTRADAY</p>
-                        <p style="cursor: pointer;">VN30</p>
-                        <i class="fas fa-chart-bar" style="cursor: pointer;"></i>
-                        <i class="fa fa-chart-pie" style="cursor: pointer;"></i>
+                        <p style="cursor: pointer;" id="icon1">VN30 INTRADAY</p>
+                        <p style="cursor: pointer;" id="icon2">VN30</p>
+                        <i class="fas fa-chart-bar" id="icon3" style="cursor: pointer;"></i>
+                        <i class="fa fa-chart-pie" style="cursor: pointer;" id="icon4"></i>
                     </div>
                 </div>
             </div>
@@ -281,8 +281,8 @@
                 </div>
                 <div class="datachangeorderBook">
                     <div class="title-header">
-                        <p class="comeinandDay">Lệnh trong ngày</p>
-                        <p class="conditionalOrder">Lệnh điều kiện</p>
+                        <p class="comeinandDay comeinandDay--action">Lệnh trong ngày</p>
+                        <p class="conditionalOrder conditionalOrder--action">Lệnh điều kiện</p>
                         <p class="title-header__icon">
                             <i class="fa fa-sync" style="margin-right: 10px; cursor: pointer;"></i>
                             <i class="fa fa-minus close hideTabRight" style="cursor: pointer;" id=""></i>
@@ -327,8 +327,8 @@
 
                 <div class="datachangeMenu">
                     <div class="title-header">
-                        <p class="comeinandDay">Vị thế mở</p>
-                        <p class="conditionalOrder">Vị thế đóng</p>
+                        <p class="comeinandDay openTaste--action">Vị thế mở</p>
+                        <p class="conditionalOrder openTaste--close">Vị thế đóng</p>
                         <p class="title-header__icon">
                             <i class="fa fa-sync" style="margin-right: 10px; cursor: pointer;"></i>
                             <i class="fa fa-minus close hideTabRight" style="cursor: pointer;" id=""></i>
@@ -341,24 +341,24 @@
                         <p>Giá hiện tại</p>
                         <p>+/-</p>
                     </div>
-                    <div class="title-table">
+                    <div class="title-table closeTaste">
                         <p>Mã</p>
                         <p>KL</p>
-                        <p>Giá vốn</p>
-                        <p>Giá hiện tại</p>
-                        <p>+/-</p>
+                        <p>Giá mua</p>
+                        <p>Giá bán</p>
+                        <p>Lãi/Lỗ đã thực hiện</p>
                     </div>
                     <div class="data-show">
                         <div class="data-show__detail">
-                            <p>Mua</p>
                             <p>VN30F2104</p>
+                            <p>1</p>
                             <p><span>0/</span>21</p>
                             <p>1,111.0</p>
                             <p><i class="fa fa-minus-circle"></i></p>
                         </div>
                         <div class="data-show__detail">
-                            <p>Mua</p>
                             <p>VN30F2104</p>
+                            <p>2</p>
                             <p><span>0/</span>21</p>
                             <p>1,111.0</p>
                             <p><i class="fa fa-minus-circle"></i></p>

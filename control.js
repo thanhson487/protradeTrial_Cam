@@ -40,6 +40,7 @@ $(document).ready(function () {
     $(".datachangeorderBook").hide();
     $("#datachangeasset").hide();
     $(".datachangeMenu").show();
+    $(".closeTaste").hide();
   });
 
   $("#asset").click(function () {
@@ -79,32 +80,61 @@ $(document).ready(function () {
     $("#asset").css({ "background-color": "#131722", color: "#ffffff" });
   });
 
-  $(".conditionalOrder").click(function () {
+  $(".conditionalOrder--action").click(function () {
     $(".conditionalOrder-menu").css({
       display: "flex",
     });
     $(".conditionalOrder-day").hide();
     $(".data-show").hide();
-    $(".conditionalOrder").css({
+    $(".conditionalOrder--action").css({
       color: "#f7941d",
       fontWeight: "700",
     });
-    $(".comeinandDay").css({
+    $(".comeinandDay--action").css({
       color: "#fff",
       fontWeight: "1",
     });
   });
-  $(".comeinandDay").click(function () {
+
+  $(".comeinandDay--action").click(function () {
     $(".conditionalOrder-menu").css({
       display: "none",
     });
     $(".conditionalOrder-day").show();
     $(".data-show").show();
-    $(".comeinandDay").css({
+    $(".comeinandDay--action").css({
       color: "#f7941d",
       fontWeight: "700",
     });
-    $(".conditionalOrder").css({
+    $(".conditionalOrder--action").css({
+      color: "#fff",
+      fontWeight: "1",
+    });
+  });
+
+  $(".openTaste--close").click(function () {
+    $(".openTaste").hide();
+    $(".closeTaste").show();
+    $(".data-show").hide();
+    $(".openTaste--close").css({
+      color: "#f7941d",
+      fontWeight: "700",
+    });
+    $(".openTaste--action").css({
+      color: "#fff",
+      fontWeight: "1",
+    });
+  });
+
+  $(".openTaste--action").click(function () {
+    $(".openTaste").show();
+    $(".closeTaste").hide();
+    $(".data-show").show();
+    $(".openTaste--action").css({
+      color: "#f7941d",
+      fontWeight: "700",
+    });
+    $(".openTaste--close").css({
       color: "#fff",
       fontWeight: "1",
     });
@@ -121,5 +151,66 @@ $(document).ready(function () {
     } else {
       $(".main__left").css({ "grid-template-columns": "1fr 396px" });
     }
+  });
+
+  //chart actipn
+  $("#icon1").click(function () {
+    $("#icon1").css({
+      color: "yellow",
+    });
+    $("#icon2").css({
+      color: "#fff",
+    });
+    $("#icon3").css({
+      color: "#fff",
+    });
+    $("#icon4").css({
+      color: "#fff",
+    });
+  });
+
+  $("#icon2").click(function () {
+    $("#icon1").css({
+      color: "#fff",
+    });
+    $("#icon2").css({
+      color: "yellow",
+    });
+    $("#icon3").css({
+      color: "#fff",
+    });
+    $("#icon4").css({
+      color: "#fff",
+    });
+  });
+
+  $("#icon3").click(function () {
+    $("#icon1").css({
+      color: "#fff",
+    });
+    $("#icon2").css({
+      color: "#fff",
+    });
+    $("#icon3").css({
+      color: "yellow",
+    });
+    $("#icon4").css({
+      color: "#fff",
+    });
+  });
+
+  $("#icon4").click(function () {
+    $("#icon1").css({
+      color: "#fff",
+    });
+    $("#icon2").css({
+      color: "#fff",
+    });
+    $("#icon3").css({
+      color: "#fff",
+    });
+    $("#icon4").css({
+      color: "yellow",
+    });
   });
 });
