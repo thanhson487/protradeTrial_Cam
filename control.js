@@ -79,6 +79,36 @@ $(document).ready(function () {
     $("#asset").css({ "background-color": "#131722", color: "#ffffff" });
   });
 
+  $(".conditionalOrder").click(function () {
+    $(".conditionalOrder-menu").css({
+      display: "flex",
+    });
+    $(".conditionalOrder-day").hide();
+    $(".data-show").hide();
+    $(".conditionalOrder").css({
+      color: "#f7941d",
+      fontWeight: "700",
+    });
+    $(".comeinandDay").css({
+      color: "#fff",
+      fontWeight: "1",
+    });
+  });
+  $(".comeinandDay").click(function () {
+    $(".conditionalOrder-menu").css({
+      display: "none",
+    });
+    $(".conditionalOrder-day").show();
+    $(".data-show").show();
+    $(".comeinandDay").css({
+      color: "#f7941d",
+      fontWeight: "700",
+    });
+    $(".conditionalOrder").css({
+      color: "#fff",
+      fontWeight: "1",
+    });
+  });
   // action show
   $(window).resize(() => {
     if ($(window).width() <= 1024) {
@@ -88,6 +118,8 @@ $(document).ready(function () {
       $("#orderBook").css({ "background-color": "#131722", color: "#ffffff" });
       $("#listfooter").css({ "background-color": "#131722", color: "#ffffff" });
       $("#asset").css({ "background-color": "#131722", color: "#ffffff" });
+    } else {
+      $(".main__left").css({ "grid-template-columns": "1fr 396px" });
     }
   });
 });

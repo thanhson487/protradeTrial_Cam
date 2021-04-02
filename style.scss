@@ -643,6 +643,14 @@ a {
             }
           }
         }
+        .conditionalOrder-menu {
+          display: none;
+          width: 100%;
+          align-items: center;
+          p {
+            flex: 1;
+          }
+        }
         .data-show {
           &__detail {
             display: flex;
