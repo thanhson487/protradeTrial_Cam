@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+body {
+  overflow: hidden;
+}
+
 p,
 a {
   padding: 0;
