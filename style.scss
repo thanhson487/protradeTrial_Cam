@@ -238,6 +238,9 @@ a {
     grid-template-rows: 1fr 1fr;
     grid-gap: 2px;
 
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: 1fr 396px;
+    }
     .historydeal {
       background: #2f3240;
 
@@ -849,6 +852,9 @@ main {
     right: 0;
     z-index: 30;
     width: 396px;
+    @media screen and (max-width: 1024px) {
+      width: 396px;
+    }
 
     ul {
       display: flex;
@@ -881,5 +887,8 @@ main {
   }
   .main {
     grid-template-columns: 1fr;
+  }
+  .footer {
+    width: 396px;
   }
 }

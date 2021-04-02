@@ -81,15 +81,13 @@ $(document).ready(function () {
 
   // action show
   $(window).resize(() => {
-    if ($(window).width() < 1024) {
+    if ($(window).width() <= 1024) {
       $(".main").css({ "grid-template-columns": "1fr" });
       $(".main__right").css({ display: "none" });
-      $(".footer").css({ width: "396px" });
+      $(".footer").css({ width: "396px", boder: "1px solid red" });
       $("#orderBook").css({ "background-color": "#131722", color: "#ffffff" });
       $("#listfooter").css({ "background-color": "#131722", color: "#ffffff" });
       $("#asset").css({ "background-color": "#131722", color: "#ffffff" });
-    } else {
-      $(".footer").css({ width: "396px" });
     }
   });
 });

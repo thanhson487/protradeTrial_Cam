@@ -189,6 +189,11 @@ a {
   grid-template-rows: 1fr 1fr;
   grid-gap: 2px;
 }
+@media screen and (max-width: 1024px) {
+  .main__left {
+    grid-template-columns: 1fr 396px;
+  }
+}
 .main__left .historydeal {
   background: #2f3240;
   overflow-y: auto;
@@ -677,6 +682,11 @@ main .footer {
   z-index: 30;
   width: 396px;
 }
+@media screen and (max-width: 1024px) {
+  main .footer {
+    width: 396px;
+  }
+}
 main .footer ul {
   display: flex;
   justify-content: space-between;
@@ -703,6 +713,10 @@ main .footer ul li:nth-of-type(3) {
 
   .main {
     grid-template-columns: 1fr;
+  }
+
+  .footer {
+    width: 396px;
   }
 }
 
